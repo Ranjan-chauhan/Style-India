@@ -143,7 +143,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Navigation() {
+export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
@@ -288,10 +288,7 @@ export default function Navigation() {
       </Transition>
 
       <header className="relative bg-white">
-        <p className="flex h-10 items-center justify-center bg-indigo-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
-          Get free delivery on orders over $100
-        </p>
-
+       
         <nav aria-label="Top" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="border-b border-gray-200">
             <div className="flex h-16 items-center">
@@ -311,7 +308,7 @@ export default function Navigation() {
                   <span className="sr-only">Your Company</span>
                   <img
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ87ubRiroyaG4wsMd1ypC77dgjDDDDzC3zRw&s"
                     alt=""
                   />
                 </a>

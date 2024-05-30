@@ -2,7 +2,7 @@ import React from "react";
 
 function HomeSectionCard() {
   return (
-    <div className="curser-pointer flex flex-col items-center justify-center rounded-2xl shadow-lg overflow-hidden w-[15rem] mx-3 mt-3">
+    <div className="curser-pointer flex flex-col items-center justify-center rounded-2xl shadow-lg overflow-hidden w-[15rem] mx-3 mt-3 border border-black">
       <div className="h-[16rem] w-[13rem]">
         <img
           className="object-cover object-top w-full h-full item rounded-2xl"

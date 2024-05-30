@@ -1,5 +1,5 @@
 // import { useState } from 'react'
-import Navigation from './components/navigation/Navigation'
+import Navbar from './components/navbar/Navbar'
 import Hompage from './components/pages/Homepage/Hompage'
 
 
@@ -10,7 +10,7 @@ function App() {
   return (
     <>
     <div>
-      <Navigation />    
+      <Navbar />    
 
       <div>
         <Hompage/>
