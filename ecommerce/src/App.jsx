@@ -1,6 +1,8 @@
 // import { useState } from 'react'
+import Footer from './components/Footer/Footer'
 import Navbar from './components/navbar/Navbar'
 import Hompage from './components/pages/Homepage/Hompage'
+import Product from './components/product/Product'
 
 
 
@@ -13,7 +15,9 @@ function App() {
       <Navbar />    
 
       <div>
-        <Hompage/>
+        {/* <Hompage/> */}
+        <Product />
+        <Footer/>
       </div>
 
     </div>
