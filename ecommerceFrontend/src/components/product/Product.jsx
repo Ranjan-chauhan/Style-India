@@ -64,11 +64,14 @@ const filters = [
     id: "size",
     name: "Size",
     options: [
+      { value: "XXS", label: "XXS", checked: false },
+      { value: "XS", label: "XS", checked: false },
       { value: "S", label: "S", checked: false },
       { value: "M", label: "M", checked: false },
       { value: "L", label: "L", checked: false },
       { value: "XL", label: "XL", checked: false },
       { value: "2XL", label: "2XL", checked: false },
+      { value: "3XL", label: "3XL", checked: false }
     ],
   },
 ];
