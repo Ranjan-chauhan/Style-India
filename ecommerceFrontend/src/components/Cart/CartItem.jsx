@@ -10,7 +10,7 @@ function CartItem() {
         <div className="flex items-center m-3">
           <div className="w-[6rem] h-[7rem] lg:w-[9rem] lg:h-[10rem]">
             <img
-              className="h-full w-full object-cover object-top rounded-xl"
+              className="h-full w-full object-cover object-top rounded-lg"
               src="https://clothsvilla.com/cdn/shop/products/Exclusive_Designer_Navy_Blue_Traditional_Ethnic_Wear_Lehenga_Choli_153.2_1024x1024.jpg?v=1694846200"
               alt=""
             />

@@ -18,6 +18,7 @@ import { Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, XMarkIcon } from '@her
 import Avatar from "@mui/material/Avatar";
 import { deepPurple } from "@mui/material/colors";
 import { Button, Menu, MenuItem } from "@mui/material";
+import { useNavigate } from 'react-router-dom';
 
 const navigation = {
   categories: [
@@ -146,11 +147,19 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
+
 export default function Navbar() {
   const [open, setOpen] = useState(false)
   const [anchorEl, setAnchorEl] = useState(null);
   const openUserMenu = Boolean(anchorEl);
+  const navigate = useNavigate();
   // const [openAuthModel, setOpenAuthModel] = useState(false);
+
+  const handleCategoryClick = (category, section, item, close) => {
+    navigate(`/${category.id}/${section.id}/${item.name}`);
+    close();
+  };
+
 
   const handelUserClick = (e) => {
     setAnchorEl(e.currentTarget);
@@ -404,9 +413,19 @@ export default function Navbar() {
                                           >
                                             {section.items.map((item) => (
                                               <li key={item.name} className="flex">
-                                                <a href={item.href} className="hover:text-gray-800">
+                                              <p
+                                                  onClick={() => {
+                                                    handleCategoryClick(
+                                                      category,
+                                                      section,
+                                                      item,
+                                                      close
+                                                    );
+                                                  }}
+                                                  className="cursor-pointer hover:text-gray-800"
+                                                >
                                                   {item.name}
-                                                </a>
+                                                </p>
                                               </li>
                                             ))}
                                           </ul>
@@ -480,7 +499,7 @@ export default function Navbar() {
                         {/* ) : null} */}
                         <MenuItem
                           onClick={() => {
-                            // navigate("/account/order");
+                            navigate("/account/order");
                             handleCloseUserMenu();
                           }}
                         >

@@ -2,7 +2,7 @@ import React from "react";
 
 function HomeSectionCard() {
   return (
-    <div className="curser-pointer flex flex-col items-center justify-center rounded-2xl shadow-lg overflow-hidden w-[15rem] mx-3 mt-3 ">
+    <div className="curser-pointer flex flex-col items-center justify-center rounded-2xl shadow-md  overflow-hidden w-[15rem] m-3 ">
       <div className="h-[16rem] w-[13rem]">
         <img
           className="object-cover object-top w-full h-full item rounded-2xl"
@@ -13,7 +13,7 @@ function HomeSectionCard() {
 
       <div>
         <h3 className="text-lg font-medium text-center mt-2 text-gray-900">Mango Man</h3>
-        <p className="mx-1 text-sm text-center text-gray-900 w-10/12 ">
+        <p className="m-1 text-sm text-center text-gray-900 w-10/12 ">
           Coolmax® cotton shirt - Man | Mango Man India
         </p>  
       </div>

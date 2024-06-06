@@ -23,7 +23,7 @@ export default function CheckOut() {
   
 
   return (
-    <div className='px-10 lg:px-20'>
+    <div className='px-10 lg:px-20 mt-10'>
        <Box sx={{ width: '100%' }}>
       <Stepper activeStep={step}>
         {steps.map((label) => {
@@ -60,7 +60,7 @@ export default function CheckOut() {
             
           </Box>
 
-          <div>
+          <div className='mt-5'>
           {step == 2 ? <DeliveryAdressForm /> : <OrderSummary />}
           </div>
 

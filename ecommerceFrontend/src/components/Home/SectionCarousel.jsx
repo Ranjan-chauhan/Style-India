@@ -24,7 +24,7 @@ function SectionCarousel() {
 
   return (
     <div className=" px-5x">
-      <div className=" relative p-4 border border-black">
+      <div className=" relative p-4">
         <AliceCarousel
           items={items}
           responsive={responsive}

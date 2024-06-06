@@ -3,20 +3,25 @@ import React, { useState } from "react";
 import AdressCard from "../Adress/AdressCard";
 
 function DeliveryAdressForm() {
-    const [user, setUser] = useState({
-        firstName:"",lastName:"",adress:"",city:"",state:"",zip:"",phone:""});
+  const [user, setUser] = useState({
+    firstName: "",
+    lastName: "",
+    adress: "",
+    city: "",
+    state: "",
+    zip: "",
+    phone: "",
+  });
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("adress", user);
+  };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log("adress", user);
-    }
-
-    
-    const handleChange = (e) => {
-        const {name,value} = e.target
-        setUser ({...user,[name]:value})
-    } 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setUser({ ...user, [name]: value });
+  };
 
   return (
     <div>
@@ -24,7 +29,7 @@ function DeliveryAdressForm() {
         <Grid
           xs={12}
           lg={5}
-          className="border rounded-e-md shadow-md h-[30.5rem] overflow-y-scroll "
+          className="border rounded-e-md shadow-md h-[30.5rem] overflow-y-scroll my-7"
         >
           <div className="p-5 py-7 border-b cursor-pointer">
             <AdressCard />
@@ -56,9 +61,8 @@ function DeliveryAdressForm() {
                     name="lastName"
                     label="Last Name"
                     fullWidth
-                   value={user.lastName}
-onChange={handleChange}
-
+                    value={user.lastName}
+                    onChange={handleChange}
                     autoComplete="given-name"
                   />
                 </Grid>
@@ -125,7 +129,12 @@ onChange={handleChange}
                   />
                 </Grid>
                 <Grid item xs={12} sm={6}>
-                  <Button variant="contained" size="large" type="submit" sx={{mt:2}}>
+                  <Button
+                    variant="contained"
+                    size="large"
+                    type="submit"
+                    sx={{ mt: 2 }}
+                  >
                     Add Adress
                   </Button>
                 </Grid>
