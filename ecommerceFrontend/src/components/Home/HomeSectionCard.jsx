@@ -1,20 +1,20 @@
 import React from "react";
 
-function HomeSectionCard() {
+function HomeSectionCard({product}) {
   return (
     <div className="curser-pointer flex flex-col items-center justify-center rounded-2xl shadow-md  overflow-hidden w-[15rem] m-3 ">
       <div className="h-[16rem] w-[13rem]">
         <img
           className="object-cover object-top w-full h-full item rounded-2xl"
-          src="https://st.mngbcn.com/rcs/pics/static/T6/fotos/S20/67024450_50.jpg?ts=1703689384071&imwidth=360&imdensity=2"
+          src={product.imageUrl}
           alt=""
         />
       </div>
 
       <div>
-        <h3 className="text-lg font-medium text-center mt-2 text-gray-900">Mango Man</h3>
-        <p className="m-1 text-sm text-center text-gray-900 w-10/12 ">
-          Coolmax® cotton shirt - Man | Mango Man India
+        <h3 className="text-lg font-medium text-center mt-2 text-gray-900">{product.brand}</h3>
+        <p className="m-1 text-sm text-center items-center text-gray-900 w-10/12 ">
+          {product.title}
         </p>  
       </div>
 

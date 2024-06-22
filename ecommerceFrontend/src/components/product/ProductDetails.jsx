@@ -414,8 +414,8 @@ export default function ProductDetails() {
         </div>
         {/* Similar Product */}
         <div className="pt-10">
-        <h1 className="p-5 text-xl font-bold">Similar Product</h1>
-        <div className="flex flex-wrap space-x-5 space-y-10 border items-center justify-center h-auto w-auto ">
+        <h1 className="pb-3 text-xl font-bold">Similar Product</h1>
+        <div className="flex flex-wrap space-x-5 space-y-10 border items-center justify-center h-auto w-auto p-5 ">
           {mens_kurta.map((item,index) => <HomeSectionCard product={item} Key={index} />)}
         </div>
         </div>

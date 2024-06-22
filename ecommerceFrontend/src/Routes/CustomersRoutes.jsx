@@ -1,14 +1,14 @@
-import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import HomePage from '../components/Home/HomePage'
-import Navbar from '../components/navbar/Navbar'
 import Footer from '../components/Footer/Footer'
-import Product from '../components/product/Product'
-import ProductDetails from '../components/product/ProductDetails'
+import Product from '../components/Product/Product'
+import ProductDetails from '../components/Product/ProductDetails'
 import Cart from '../components/Cart/Cart'
-import CheckOut from '../components/checkOut/CheckOut'
-import Order from '../components/order/Order'
-import OrederDetails from '../components/order/OrederDetails'
+import Order from '../components/Order/Order'
+import OrederDetails from '../components/Order/OrederDetails'
+import CheckOut from '../components/CheckOut/CheckOut'
+import Navbar from '../components/Navbar/Navbar'
+
 
 function CustomersRoutes() {
   return (

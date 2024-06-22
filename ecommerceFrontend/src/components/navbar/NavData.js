@@ -8,7 +8,7 @@ export const navigation = {
             name: "New Arrivals",
             href: "#",
             imageSrc:
-              "https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg",
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR36DC4ee7bd57M6Ka849eI9SuHmJrSdUTvWQ&s",
             imageAlt:
               "Models sitting back to back, wearing Basic Tee in black and bone.",
           },
@@ -16,7 +16,7 @@ export const navigation = {
             name: "Basic Tees",
             href: "#",
             imageSrc:
-              "https://tailwindui.com/img/ecommerce-images/mega-menu-category-02.jpg",
+              "https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg",
             imageAlt:
               "Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.",
           },
@@ -50,7 +50,7 @@ export const navigation = {
             name: "New Arrivals",
             href: "#",
             imageSrc:
-              "https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg",
+              "https://cdn.shopify.com/s/files/1/0552/5389/3273/files/FB_Cover_2048x2048.png?v=1630937346",
             imageAlt:
               "Drawstring top with elastic loop closure and textured interior padding.",
           },
